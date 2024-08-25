@@ -1,15 +1,17 @@
 /* Aca estilos de la pag principal */
-html,body{
+html,
+body {
     width: 100%;
-    height: 100%;}
-   
-.main-container{
+    height: 100%;
+}
+
+.main-container {
     width: 600px;
     margin: 0 auto;
 
-    }
-.galeria{
-    background-color: red;
+}
+
+.galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -17,42 +19,87 @@ html,body{
     /*height: 300px;*/
     width: 550px;
     margin: 0 auto;
-       
+
 }
-.header-container{
+
+.header-container {
     text-align: center;
-    margin: 16px;    
+    margin: 16px;
 }
-.producto{
+
+.producto {
     /*width: 40px;*/
-    background-color: blue;
     margin: 2px;
     max-height: 100%;
     max-width: 100%;
-  /*  display: flex;
+    /*  display: flex;
     text-align: center;
     justify-content: center;*/
 }
 
-.producto-imagen{
+.producto-imagen {
     width: 100%;
-    background-color: yellow;
 }
 
-.icon{
+.icon {
     margin: 0 auto;
     width: 120px;
     height: 90px;
-    background-color: green;
     display: block;
 }
 
-.input-cant{
+.input-cant {
     margin: 4px 5px;
     width: 90%;
 }
-.descripcion-texto{
-    background-color: aqua;
+
+.descripcion-texto {
     margin: 4px auto;
     padding: 2px;
+    text-align: center;
+}
+
+.inputs-container {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 5px;
+}
+.primeracolumna{
+    grid-column: span 1;
+}
+.segundacolumna{
+    grid-column: span 1;
+}
+
+.input-texto {
+    margin: 15px 10px;
+    width: 100%;
+    max-width: 95%;
+    box-sizing: border-box;
+    height: 25px;
+}
+
+.input-boton {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    grid-column: span 2;
+}
+
+.input-boton:hover {
+    color: gray;
+}
+
+.aviso {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }

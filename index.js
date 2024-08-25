@@ -31,3 +31,26 @@ function rellenarDescripcion() {
 };
 
 rellenarDescripcion();
+
+//Funcion para obtner el precio sub total de cada producto en base a las cantidades y el precio ya estipulado
+let idCant = [];
+for (let i = 1; i <= 9; i++) {
+    idCant.push("cant" + i)
+};
+
+function capturar() {
+    let precioSubTotal = [];
+    let cantidades = [];
+    for (let i = 1; i <= 9; i++){
+        let currentValue = "cant" + i; 
+        //si el valor del Id esta relleno, entonces se lo guardara en el arreglo ya multiplicado por su precio.
+        if (document.getElementById(currentValue).value) {
+            precioSubTotal.push(document.getElementById(currentValue).value * productos[(i - 1)].precio);
+            cantidades.push(document.getElementById(currentValue).value)
+        }
+    }
+    alert(precioSubTotal);
+    alert(cantidades)
+
+
+}
